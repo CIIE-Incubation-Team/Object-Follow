@@ -1,15 +1,15 @@
 #include <Servo.h>
-#define RIGHT 13
-#define LEFT 12
+#define RIGHT 12
+#define LEFT 13
 #define trigpin 8
 #define echopin 7
 
-const int MOTOR1 = 5;
-const int MOTOR2 = 6;
+const int MOTOR1 = 3;
+const int MOTOR2 = 4;
 const int MOTOR3 = 9;
 const int MOTOR4 = 10;
 
-const int GO = 225;
+const int GO = 125;
 const int NO = 0;
 
 Servo myservo;
@@ -21,7 +21,7 @@ void setup()
 {
     // put your setup code here, to run once:
     Serial.begin(9600);
-    myservo.attach(10);
+    myservo.attach(11);
 
     for (pos = 90; pos <= 160; pos += 1)
     {
